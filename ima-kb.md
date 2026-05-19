@@ -41,7 +41,7 @@
 | Exhibit K | Contractor Organisation & Key Personnel; minimum organisation, Category 1/2 |
 | Exhibit L | HSE, Security, Social/Community, Environment |
 | Exhibit M | Nigerian Oil & Gas Industry Content Development (NOGICD, NCEP, HCD) |
-| Tender Bulletins TB1–TB11 + technical packages | Revisions/clarifications về closing date, procurement services, NUPRC/CAC/TIN, FEED Punch List, Exhibit E docs, Exhibit J rev1, sanctions, LLI vendors, plus additional IFD technical documents bundled with TB7/TB11 combines |
+| Tender Bulletins TB1–TB13 + technical packages | Revisions/clarifications về closing date, procurement services, NUPRC/CAC/TIN, FEED Punch List, Exhibit E docs, Exhibit J rev1, sanctions, LLI vendors, MRU installation strategy (TB12), LLI acceptable technical proposals hand-over (TB13), plus additional IFD technical documents bundled với TB7/TB11 combines |
 | Combine PIDs | P&IDs/PFS/plot plans cho integration BNAG/IMA |
 
 ---
@@ -650,7 +650,7 @@ Tenderer phải submit **lead times từ PO → Ex-Works delivery** cho TEG, MRU
 
 ---
 
-## 21. TENDER BULLETINS TB1–TB11 + TECHNICAL PACKAGES
+## 21. TENDER BULLETINS TB1–TB13 + TECHNICAL PACKAGES
 
 | TB | Date | Chủ đề | Tác động |
 |---|---|---|---|
@@ -665,8 +665,89 @@ Tenderer phải submit **lead times từ PO → Ex-Works delivery** cho TEG, MRU
 | TB9 | 1 Apr 2026 | Economic Sanctions & Export Control | Tenderer submit questionnaire trong Volume 1 Section 2 Business Ethics |
 | TB10 | 1 Apr 2026 | LLI Vendor Engagement | Update declined vendors + yêu cầu submit lead times cho TEG/MRU/Gas Metering trước Closing Date |
 | TB11 / `tb11_combine.pdf` | Source package | Bulletin + additional IFD/IFI technical documents | Không được xem chỉ là bulletin text; phải extract/register Process Simulation & HMB, Metering Philosophy, BNAG Process Description, Emergency Depressurisation, Flare Debottlenecking, Tie-in List, MRU/HP Separator/TEG/Fiscal Metering specs, piping/MTO, instrumentation và mechanical lists |
+| TB12 | 18 May 2026 | **Mercury Removal Unit – Installation Strategy** (Exhibits A, B, C & D) | Base case: full E/P/F/FAT + install/MC/commissioning of MRU đáp ứng **CD4 = ED+105W**. Thêm 2 OPTIONS độc quyền của COMPANY (latest exercise date = **ED+2 months**, đưa vào Exhibit C Section 6) — chi tiết tại Section 21A. |
+| TB13 | 18 May 2026 | **LLI Vendors Engagement — Hand-Over of Acceptable Technical Proposals** (Exhibit A) | Tiếp nối TB2, TB10 và thông tin chia sẻ qua Ariba ngày 13 Apr + 6 May 2026. Cung cấp final technical documents + technical clarification table giữa COMPANY và VENDORS cho **TEG Unit, Gas Metering Unit, Mercury Removal Unit**. Tài liệu lưu trên SharePoint (folder `LLI technical - 15May26` của site `IMA-IFD-00004-BrownfieldModificationandIntegration-Documents2`). Nghĩa vụ rà soát của CONTRACTOR theo **Article 9 of the AGREEMENT** áp dụng đầy đủ. |
 
 **KB rule:** TB7/TB11 combine files may contain many standalone technical documents. Bot must cite the embedded document number/title where available, not only the tender bulletin number.
+
+---
+
+## 21A. TB12 — MRU INSTALLATION STRATEGY (chi tiết)
+
+**Date:** 18 May 2026 · **Ref:** IMA-IFD-0004-TBU-000012 · **Documents concerned:** Exhibit A, B, C & D · **Issuer:** Michael ROTHAN, GPI Manager.
+
+MRU đã được xác nhận thuộc scope of WORK của TENDERER từ FEED study (xem TB2 / Kick-Off Meeting 20-Feb-2026). TB12 quy định strategy thực hiện như sau.
+
+### 21A.1 Base case (luôn áp dụng)
+
+- CONTRACTOR perform **engineering, procurement, fabrication, FAT** của MRU theo **Exhibit C**, bất kể các OPTIONS bên dưới có được exercise hay không.
+- Nếu COMPANY không exercise OPTION nào → CONTRACTOR tiếp tục seamlessly với **installation, mechanical completion, commissioning** của MRU để đáp ứng **COMPLETION DATE CD4 = ED+105W**.
+
+### 21A.2 OPTION 1 — Non-installation of the MRU (Exhibit A § 7.12.1)
+
+- Optional scope, exercise duy nhất bởi COMPANY. **Latest exercise date = ED+2 months** (đưa vào Exhibit C § 6).
+- Khi OPTION 1 được exercise, CONTRACTOR shall:
+  1. **Không** tiến hành installation, MC, commissioning, start-up của MRU tại SITE.
+  2. **Hoàn tất** engineering, procurement, fabrication, FAT và preservation của MRU.
+  3. **Store + preserve** MRU (kèm associated equipment, spare parts, special tools) tại **VENDOR's premises** đến khi hand-over cho COMPANY.
+  4. Cung cấp **full traceability, inspection và periodic reporting** về preservation status cho COMPANY.
+  5. Đảm bảo PLANT design / installation / commissioning của các hệ thống khác **fully compatible với future installation của MRU mà KHÔNG cần gas export shutdown**, bao gồm:
+     - (a) Main civil work foundations completed, **excluding grouting**.
+     - (b) Isolation valves + On/Off valves installed & commissioned tại battery limits cho từng piping tie-in **trước RFSU**.
+     - (c) Toàn bộ electrical & instrumentation cables pulled, terminated trong Technical Rooms và laid up đến Junction Boxes tại battery limits **trước RFSU**.
+     - (d) ICSS hardware + software bao gồm **toàn bộ MRU-related I/Os** trước RFSU (SIS based on **Yokogawa ProSafe RS**), signals **inhibited** và set as "not installed".
+
+### 21A.3 OPTION 2 — Installation of MRU after AOC (Exhibit A § 7.12.2)
+
+- Optional scope, exercise duy nhất bởi COMPANY. **Latest exercise date = ED+2 months** (đưa vào Exhibit C § 6).
+- Khi OPTION 2 được exercise → CONTRACTOR khởi động installation, MC, commissioning của MRU khi nhận COMPANY notification.
+- **COMPLETION DATE for the WORK** = **3 (three) months sau COMPANY notification**.
+- CONTRACTOR store + preserve MRU đến khi vận chuyển tới SITE.
+- Việc install/commissioning/start-up của MRU phải thực hiện **without any shutdown of gas export sau RFSU**, theo các nguyên tắc:
+  - (i) Isolation valves + On/Off valves commissioned tại battery limits cho từng piping tie-in **trước RFSU**.
+  - (ii) Toàn bộ cables terminated trong Instrumentation & Electrical Technical Rooms và laid up đến Junction Boxes tại battery limits **trước RFSU**.
+  - (iii) ICSS hardware + software bao gồm I/Os của MRU (SIS **must be** based on **Yokogawa ProSafe RS**) trước RFSU, **inhibited** + set points cho MRU "not installed" cho đến khi commissioning MRU.
+  - (iv) Toàn bộ non-installed equipment / spare parts / special tools liên quan MRU **stored + preserved tại CONTRACTOR's Logistics Base in Nigeria**, đến khi hand-over cho OPERATOR khi MRU commissioning hoàn tất.
+- Để hỗ trợ OPTION 2, CONTRACTOR phải:
+  - (i) Đảm bảo có mặt tại SITE toàn bộ CONTRACTOR PERSONNEL, VENDORS và CONSTRUCTION EQUIPMENT cần thiết (kèm transportation + lifting equipment).
+  - (ii) Hỗ trợ MRU start-up và PERFORMANCE TESTS cùng VENDORS và CONTRACTOR PERSONNEL.
+  - (iii) **Maintain TCC operational**, giảm POB + utilities capacities xuống mức POB cần cho MRU-related WORK.
+  - (iv) Duy trì security, communities coordination và logistics.
+  - (v) Giảm services cho COMPANY xuống **8 COMPANY PERSONNEL + 5 Government Security Forces Personnel** trong retained camp.
+
+### 21A.4 KB / AI Rules — TB12
+
+- Khi user hỏi về MRU schedule / preservation / install strategy → tham chiếu Section 21A và phân biệt rõ **Base case**, **OPTION 1**, **OPTION 2**.
+- **OPTION 1 ≠ OPTION 2**: OPTION 1 không install tại SITE (preserve tại VENDOR premises); OPTION 2 install sau AOC (preserve tại Logistics Base Nigeria, completion ED+notification+3M).
+- Cả hai OPTIONS đều có **latest exercise date = ED+2 months**.
+- SIS cho ICSS/MRU phải là **Yokogawa ProSafe RS** (consistent với FEED Punch List BNA-027 — Section 22).
+- Nếu user hỏi nội dung Exhibit B/D mà KB chưa có → trả lời thông tin chưa available, đề nghị tham chiếu tender documents trực tiếp.
+
+---
+
+## 21B. TB13 — LLI ACCEPTABLE TECHNICAL PROPOSALS HAND-OVER (chi tiết)
+
+**Date:** 18 May 2026 · **Ref:** IMA-IFD-0004-TBU-000013 · **Document concerned:** Exhibit A · **Issuer:** Michael ROTHAN, GPI Manager.
+
+- Tiếp nối **TB2** (IMA-IFD-0004-TBU-000002), **TB10** (IMA-IFD-0004-TBU-000010) và thông tin chia sẻ qua **Ariba messages ngày 13 April 2026 và 6 May 2026**.
+- COMPANY hand-over cho TENDERER bộ **updated and final documents** liên quan acceptable technical offers nhận được từ VENDORS cho **3 LLI packages**:
+  - **TEG Unit**
+  - **Gas Metering Unit**
+  - **Mercury Removal Unit (MRU)**
+- Nội dung hand-over:
+  1. **Final technical documents** cho từng package.
+  2. **Technical clarification table** giữa COMPANY và VENDORS.
+- **Phương thức truy cập:** SharePoint folder `LLI technical - 15May26` trong site `IMA-IFD-00004-BrownfieldModificationandIntegration-Documents2`, đường dẫn:
+  `https://totalworkplace.sharepoint.com/sites/IMA-IFD-00004-BrownfieldModificationandIntegration-Documents2/Documents%20partages/Brownfield-Docs%20for%20Exhibit%20E-IMA%20Design%20Dossier/BROWNFIELD%20Dossier/New%20Documents%2015-05-2026/LLI%20technical%20-%2015May26`
+- **List of Attachments:** Not applicable — refer to SharePoint link.
+- **Nghĩa vụ CONTRACTOR:** Article 9 of the AGREEMENT (Data and Information — Contractor's examination of the CONTRACT including Design Dossier documents) **áp dụng đầy đủ** cho toàn bộ tài liệu cung cấp kèm TB13.
+- TB13 **shall be incorporated into and be read as part of the TENDER DOCUMENTS**; TENDERER phải acknowledge safe receipt.
+
+### 21B.1 KB / AI Rules — TB13
+
+- Khi user hỏi về acceptable LLI vendor proposals / clarifications cho TEG / GMU / MRU → trả lời rằng final tech docs + clarification table được COMPANY chia sẻ qua **TB13 (18 May 2026)** trên SharePoint folder `LLI technical - 15May26`.
+- **Không tiết lộ tên vendor cụ thể** trừ khi đã có trong KB và đánh dấu publicly disclosable (giữ nguyên rule confidentiality Section 29).
+- Nhắc Tenderer obligation theo **Article 9** vẫn áp dụng — tài liệu hand-over không miễn trừ trách nhiệm review/verify của CONTRACTOR.
 
 ---
 
@@ -1148,6 +1229,8 @@ Maintain this as a live register:
 | TB8 | 24-Mar-2026 | Amended **Exhibit J Attachment J.1 rev1**; use rev1 for approved vendor/subcontractor queries. |
 | TB9 | 01-Apr-2026 | Economic Sanctions and Export Control questionnaire; associated with Instructions to Tenderers / Business Ethics submission. |
 | TB10 | 01-Apr-2026 | LLI vendor engagement; update declined vendors and require lead-time inputs for TEG/MRU/Gas Metering before closing date. |
+| TB12 | 18-May-2026 | **MRU Installation Strategy** (Exhibits A, B, C & D). Base case: full E/P/F/FAT + install/MC/commissioning đáp ứng CD4=ED+105W. Adds 2 OPTIONS at Company's sole discretion (latest exercise = ED+2M): OPTION 1 = non-installation (preserve at VENDOR premises); OPTION 2 = installation after AOC (completion ED+notification+3M, no gas export shutdown, preserve at Contractor's Nigeria Logistics Base). SIS must be Yokogawa ProSafe RS. See Section 21A. |
+| TB13 | 18-May-2026 | **LLI Acceptable Technical Proposals hand-over** (Exhibit A). Follows TB2/TB10 + Ariba msgs 13-Apr & 6-May. COMPANY shares final technical documents + clarification table for **TEG / Gas Metering / MRU** via SharePoint (`LLI technical - 15May26`). Article 9 review obligations of CONTRACTOR apply in full. See Section 21B. |
 
 ### 31.4 AI answer constraints for tender-submission questions
 
